@@ -28,3 +28,4 @@ images = results.images
 # Save or display the images
 for i, img in enumerate(images):
     img.save(f"image_{i}.png")  # Save each image
+
