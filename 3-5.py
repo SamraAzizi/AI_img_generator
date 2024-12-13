@@ -1,7 +1,8 @@
 import torch
 from diffusers import  StableDiffusion3Pipeline
 
-large_model = "stabilityai/stable-diffusion-3.5-large"
+large_model = "stabilityai/stable-diffusion-2-1"  # Example of a public model
+
 
 pipe = StableDiffusion3Pipeline.from_pretrained(large_model, torch_dtype=torch.bfloat16)
 pipe.enable_attention_slicing()
